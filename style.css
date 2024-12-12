@@ -7,12 +7,41 @@ body{
 }
 .m-con{
     display: flex;
-    justify-content: center;
-    height: 40vh;
+    justify-content: flex-start;
+    height: 100vh;
     align-items: center;
     flex-direction: column;
     color: green;
     margin-bottom: 0;
+    /* padding-top  : 10% */
+    /* margin-top: 10% */
+}
+@media (max-width: 640px) {
+    form{
+        margin-top: 10%;
+    }
+    .div-list{
+        flex-direction: row;
+        margin: auto;
+        padding-top: 6%;
+    }
+    .status-c,.status-p{
+        width: 80%;
+        margin-bottom: 2%;
+        text-align: center;
+        font-size: xx-small;
+        margin: auto;
+    }
+    form button{
+        font-size: xx-small;
+    }
+    form label{
+        font-size: small;
+    }
+    .m-con{
+        padding: 10%;
+    }
+    
 }
 .m-con h1{
     font-weight: bolder;
@@ -72,6 +101,7 @@ i{
     justify-content: center;
     gap: 5%;
     margin:  0 auto;
+    margin-top: 2%;
 }
 .status-p h1{
     color: red;
